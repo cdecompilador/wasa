@@ -280,7 +280,7 @@ impl Vm {
         Ok(None)
     }
 
-    /// Starts the execution of the provided module
+    /// Starts the execution of the provided wasm module
     pub fn run(&mut self) -> Result<(), Error> {
         let mut i = 0;
         while !self.halt {
